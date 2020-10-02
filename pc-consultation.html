@@ -25,7 +25,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container">
       <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="" /></a> -->
-      <h1 class="navbar-brand">Singlebit</h1>
+      <h1 class="navbar-brand"><a class="nav-link brand-link" href="index.html">SingleBit</a></h1>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars ml-1"></i>
@@ -37,7 +37,8 @@
     <div class="container">
       <div class="text-center">
         <h2 class="section-heading text-uppercase">PC Consultation</h2>
-        <h3 class="section-subheading text-muted">Have an idea or interested in joining our team? Get in touch with us!</h3>
+        <h3 class="section-subheading text-muted">Interested in having a PC built with us?</h3>
+        <p class="text-muted">Fill out the form below and we'll get back to you with a recommended build and we can go from there!</p>
       </div>
       <form id="contactForm" name="sentMessage" novalidate="novalidate">
         <div class="row align-items-stretch mb-5">
@@ -56,15 +57,52 @@
             </div>
           </div>
           <div class="col-md-6">
-            <div class="form-group form-group-textarea mb-md-0">
-              <textarea class="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
+            <div class="form-group">
+              <input class="form-control" id="budget" type="text" placeholder="Budget (Min/Max)*" required="required" data-validation-required-message="Please enter a budget value (Min and Max)." />
               <p class="help-block text-danger"></p>
+            </div>
+            <div class="form-group">
+              <input class="form-control" id="software" type="text" placeholder="Software used *" required="required" data-validation-required-message="Please enter software used." />
+              <p class="help-block text-danger"></p>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="monitor">
+                    <label for="monitor" class="form-check-label">Monitor</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="keyboard">
+                    <label for="keyboard" class="form-check-label">Keyboard</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="mouse">
+                    <label for="mouse" class="form-check-label">Mouse</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="speakers">
+                    <label for="speakers" class="form-check-label">Speakers</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="headset">
+                    <label for="headset" class="form-check-label">Headset/Headphones</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="microphone">
+                    <label for="microphone" class="form-check-label">Microphone</label>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
         <div class="text-center">
           <div id="success"></div>
-          <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Send Message</button>
+          <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Send Form</button>
         </div>
       </form>
     </div>
@@ -72,20 +110,20 @@
 
 
   <footer class="footer py-4">
-      <div class="container">
-          <div class="row align-items-center">
-              <div class="col-lg-4 text-lg-left">Copyright © Singlebit Development 2020</div>
-              <div class="col-lg-4 my-3 my-lg-0">
-                  <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                  <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                  <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-              </div>
-              <div class="col-lg-4 text-lg-right">
-                  <a class="mr-3" href="#!">Privacy Policy</a>
-                  <a href="#!">Terms of Use</a>
-              </div>
-          </div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-4 text-lg-left">Copyright © Singlebit Development 2020</div>
+        <div class="col-lg-4 my-3 my-lg-0">
+          <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+          <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="col-lg-4 text-lg-right">
+          <a class="mr-3" href="#!">Privacy Policy</a>
+          <a href="#!">Terms of Use</a>
+        </div>
       </div>
+    </div>
   </footer>
 
 
@@ -100,6 +138,7 @@
   <!-- Third party plugin JS-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
   <script src="assets/mail/jqBootstrapValidation.js"></script>
+  <script src="assets/mail/pc_consult.js"></script>
 </body>
 
 </html>
