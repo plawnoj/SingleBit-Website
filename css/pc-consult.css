@@ -39,6 +39,7 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
@@ -59,4 +60,83 @@ body {
 }
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
+}
+
+section#contact {
+  background-color: #212529;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+section#contact .section-heading {
+  color: #fff;
+}
+section#contact form#contactForm .form-group {
+  margin-bottom: 1.5rem;
+}
+section#contact form#contactForm .form-group input,
+section#contact form#contactForm .form-group textarea {
+  padding: 1.25rem;
+}
+section#contact form#contactForm .form-group input.form-control {
+  height: auto;
+}
+section#contact form#contactForm .form-group-textarea {
+  height: 100%;
+}
+section#contact form#contactForm .form-group-textarea textarea {
+  height: 100%;
+  min-height: 10rem;
+}
+section#contact form#contactForm p.help-block {
+  margin: 0;
+}
+section#contact form#contactForm .form-control:focus {
+  border-color: #6c5ce7;
+  box-shadow: none;
+}
+section#contact form#contactForm ::-webkit-input-placeholder {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  color: #ced4da;
+}
+section#contact form#contactForm :-moz-placeholder {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  color: #ced4da;
+}
+section#contact form#contactForm ::-moz-placeholder {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  color: #ced4da;
+}
+section#contact form#contactForm :-ms-input-placeholder {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  color: #ced4da;
+}
+
+.page-section {
+  padding: 6rem 0;
+}
+.page-section h2.section-heading {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.page-section h3.section-subheading {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-bottom: 4rem;
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
 }
