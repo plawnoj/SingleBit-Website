@@ -40,7 +40,7 @@ $(function () {
                     phone: phone,
                     email: email,
                     budget: budget,
-                    software: software,
+                    software: software
                     monitor: monitor,
                     keyboard: keyboard,
                     mouse: mouse,

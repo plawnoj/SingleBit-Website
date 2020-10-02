@@ -14,7 +14,7 @@ if(empty($_POST['name'])      ||
 $name = strip_tags(htmlspecialchars($_POST['name']));
 $email_address = strip_tags(htmlspecialchars($_POST['email']));
 $phone = strip_tags(htmlspecialchars($_POST['phone']));
-$budget = strip_tags(htmlspecialchars($_POST['budget']);
+$budget = strip_tags(htmlspecialchars($_POST['budget']));
 $software = strip_tags(htmlspecialchars($_POST['software']));
 $monitor = strip_tags(htmlspecialchars($_POST['monitor']));
 $keyboard = strip_tags(htmlspecialchars($_POST['keyboard']));
